@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f8;
+  color: #333;
+  text-align: center;
+}
+
+header {
+  background: #0a74da;
+  color: white;
+  padding: 1rem;
+}
+
+.team-logos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.team-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.team-logo:hover {
+  transform: scale(1.1);
+}
+
+#players-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem;
+}
+
+.player-card {
+  background: white;
+  border-radius: 12px;
+  width: 180px;                /* Narrow width for portrait shape */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.player-card:hover {
+  transform: translateY(-4px);
+}
+
+.player-card img {
+  width: 100%;
+  height: 240px;              /* Taller height for portrait effect */
+  object-fit: cover;
+  border-radius: 0;
+  display: block;
+}
+
+.player-card p {
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0;
+  color: #222;
+  background-color: #f9f9f9;
+}
+
+.hidden {
+  display: none;
+}
